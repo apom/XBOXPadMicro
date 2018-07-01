@@ -64,11 +64,11 @@ int main(void) {
 	for (;;) {
 		xbox_reset_watchdog();
 
-		pad_up = !bit_check(PINC, 7);
-		pad_down = !bit_check(PINB, 2);
-		pad_left = !bit_check(PINB, 0);
-		pad_right = !bit_check(PIND, 3);
-		pad_y = !bit_check(PIND, 2);
+		pad_up = !bit_check(PINB, 1);
+		pad_down = !bit_check(PINB, 3);
+		pad_left = !bit_check(PINB, 2);
+		pad_right = !bit_check(PINB, 6);
+		pad_y = !bit_check(PIND, 3);
 		pad_b = !bit_check(PIND, 1);
 		pad_x = !bit_check(PIND, 0);
 		pad_a = !bit_check(PIND, 4);
@@ -76,10 +76,10 @@ int main(void) {
 		pad_white =  !bit_check(PIND, 7);
 		pad_start =  !bit_check(PINE, 6);
 		pad_select =  !bit_check(PINB, 4);
-		pad_l3 =  !bit_check(PINB, 5);
-		pad_r3 =  !bit_check(PINB, 6);
-		pad_l = !bit_check(PINB, 7);
-		pad_r = !bit_check(PIND, 6);
+		pad_l3 =  !bit_check(PINB, 7);
+		pad_r3 =  !bit_check(PIND, 6);
+		pad_l = !bit_check(PINB, 5);
+		pad_r = !bit_check(PIND, 2);
 
 		pad_left_analog_x = pad_left_analog_y = pad_right_analog_x = pad_right_analog_y = 0x7F;
 
